@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import LoginMobile from './mobile/LoginMobile';
+import HomeUser from './mobile/user/HomeUser';
+import HomeAdmin from './mobile/admin/HomeAdmin';
+import AssetAdmin from './mobile/admin/AssetAdmin';
+import WargaAdmin from './mobile/admin/WargaAdmin';
+import InfoAdmin from './mobile/admin/InfoAdmin';
+import PemasukanUser from './mobile/user/PemasukanUser';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path='/' element={<LoginMobile/>}/>
+        <Route path='/Admin/Home' element={<HomeAdmin/>}/>
+        <Route path='/Admin/Asset' element={<AssetAdmin/>}/>
+        <Route path='/Admin/Warga' element={<WargaAdmin/>}/>
+        <Route path='/Admin/Info' element={<InfoAdmin/>}/>
+        <Route path='/User/Home' element={<HomeUser/>}/>
+        <Route path='/User/Pemasukan' element={<PemasukanUser/>}/>
+      </Routes>
+    </Router>
   );
 }
 
