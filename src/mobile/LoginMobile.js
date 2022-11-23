@@ -21,7 +21,7 @@ export default function LoginMobile() {
   }
 
   return (
-    <Container maxWidth="sm" sx={{background:'linear-gradient(to right bottom, #38ef7d, #11998e)', height:'100vh'}}>
+    <Container maxWidth="sm" sx={{background:'linear-gradient(to right bottom, #38ef7d, #11998e)', height:'100%'}}>
       <Box
         sx={{
           height: 300,
