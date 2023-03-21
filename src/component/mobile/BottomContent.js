@@ -4,8 +4,10 @@ import React from 'react'
 export default function BottomContent({children}) {
   return (
     <Box style={{
+      flex:1,
         backgroundColor:'white',
-        height:500,
+        // height:500, (for kas)
+         height:620,
         width:'100%',
         position:'absolute',
         bottom:0,

@@ -20,7 +20,7 @@ export default function AssetAdmin() {
         justifyContent: "space-between",
         alignItems: "center",
         marginInline: 20,
-        marginBlock: 35,
+        marginBlock: 15,
       }}
     >
       {AdminMenu.map((x, y) => {

@@ -22,7 +22,6 @@ export default function LoginMobile() {
   const heightSize = useRef(window.innerHeight);
   const widthSize = useRef(window.innerWidth);
 
-
   function do_login() {
     if (username === "admin" && password === "password") {
       navigate("/Admin/Home");
@@ -30,7 +29,7 @@ export default function LoginMobile() {
       alert("username / password salah");
     }
   }
-  console.log(heightSize.current)
+  console.log(heightSize.current);
 
   return (
     // <Box
@@ -38,31 +37,32 @@ export default function LoginMobile() {
     //   sx={{
     //     background: "linear-gradient(to right bottom, #38ef7d, #11998e)",
     //     flex: 1,
-        
+
     //   }}
     // >
-      <Box sx={{flex:1, height:heightSize.current,width:widthSize.current,  background: "linear-gradient(to right bottom, #38ef7d, #11998e)",}}>
+    <Box
+      sx={{ background: "linear-gradient(to right bottom, #38ef7d, #11998e)", height:heightSize.current}}
+    >
       <Box
         sx={{
-          height: 300,
           alignItems: "center",
           justifyContent: "center",
           display: "flex",
         }}
       >
-        <img src={Logo} style={{ height: 350, width: "100%" }} />
+        <img src={Logo} />
       </Box>
       <Box>
         <Typography
           style={{
-            fontSize: 28,
+            fontSize: 24,
             fontWeight: "700",
             lineHeight: "54px",
             textAlign: "center",
             color: "whitesmoke",
           }}
         >
-          Informasi Keuangan Mushola
+          Informasi Keuangan Mushola Al-Hidayah
         </Typography>
         <Box
           sx={{
@@ -99,7 +99,7 @@ export default function LoginMobile() {
           />
         </Box>
       </Box>
-      </Box>
+    </Box>
     // </Box>
   );
 }

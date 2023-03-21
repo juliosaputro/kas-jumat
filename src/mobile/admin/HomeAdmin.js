@@ -37,16 +37,16 @@ export default function HomeAdmin() {
           justifyContent: "space-between",
           alignItems: "center",
           marginInline: 20,
-          marginBlock: 35,
+          marginBlock: 15,
         }}
       >
-        {AdminMenu.map((x, y) => {
+        {/* {AdminMenu.map((x, y) => {
           return <Menu key={y} icon={x.icon} tittle={x.name} disabled={x.disabled}
           onClick={()=>navigate(x.route)} 
           />;
-        })}
+        })} */}
         <BottomContent>
-          <List sx={{ maxHeight: 400, position: "relative", overflow: "auto" }}>
+          <List sx={{ maxHeight: 600, position: "relative", overflow: "auto" }}>
           <Typography
             style={{
               fontSize: 22,
